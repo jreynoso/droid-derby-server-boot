@@ -23,8 +23,13 @@ dependencies {
 
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+        exclude group: 'org.mockito', module: 'mockito-core'
+        exclude group: 'org.mockito', module: 'mockito-junit-jupiter'
     }
-    testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
+    testImplementation('org.springframework.boot:spring-boot-starter-webmvc-test') {
+        exclude group: 'org.mockito', module: 'mockito-core'
+        exclude group: 'org.mockito', module: 'mockito-junit-jupiter'
+    }
     testImplementation 'org.apache.groovy:groovy:5.0.4'
     testImplementation 'org.spockframework:spock-core:2.4-groovy-5.0'
     testImplementation 'org.spockframework:spock-spring:2.4-groovy-5.0'
