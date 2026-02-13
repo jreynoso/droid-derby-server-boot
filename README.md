@@ -1,6 +1,7 @@
 # Droid Derby Server Boot
 
 Minimal Spring Boot service with a `game` resource.
+This will be the backend for maintaining the game state for Droid Derby (RoboRally clone).
 
 ## Requirements
 
